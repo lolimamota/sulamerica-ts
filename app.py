@@ -50,16 +50,11 @@ else:
     print("Paciente não encontrado! Status:", response.status_code)
 
 
-
-
-
-
-
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Hello, World!'
+    return '<h1>API de automação de login</h1><hr>'
 
 if __name__ == '__main__':
     app.run(debug=True)
